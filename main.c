@@ -1,4 +1,5 @@
 #include <stdio.h>  // Uso general
+#include <stdlib.h> // Uso para system
 #include <string.h> // Uso para strcpy, strlen
 #include <ctype.h> // Uso para toupper, isalpha
 #include <math.h> // Uso para pow (potencia)
@@ -494,4 +495,5 @@ void main()
     } while (cantidadVariables <= 0);
 
     crearTabla(cantidadVariables);
+    system("pause");
 }
