@@ -13,10 +13,10 @@
 */
 void imprimirResultadosYFormas(int cantidadVariables, int cantidadCeldas, char variablesIngresadas[], int tabla[][cantidadCeldas], int resultadosFinales[], char expresionIngresada[])
 {
-    printf("\n-- RESULTADOS --\n\n");
+    printf("\n-- RESULTADOS --\n\n\n");
 
     // Mostrar los literales a modo "grafico" uno al lado del otro
-    printf("-- Tabla de verdad--\n");
+    printf("-- Tabla de verdad--\n\n");
     printf("--------------------------------------------\n");
     for (int v = 0; v < cantidadVariables; v++)
     {
@@ -38,7 +38,7 @@ void imprimirResultadosYFormas(int cantidadVariables, int cantidadCeldas, char v
     }
     printf("\n\n");
     // Generar FND (suma de productos) para filas donde resultadoFinal == 1
-    printf("-- Formas --\n");
+    printf("-- Formas --\n\n");
     printf("FND (Forma Normal Disyuntiva): ");
     int primera = 1;
     for (int c = 0; c < cantidadCeldas; c++)
@@ -416,7 +416,7 @@ void validarExpresion(int cantidadVariables, int cantidadCeldas, int tabla[][can
     }
     else
     {
-        printf("Error: La expresion posee literales no definidas.");
+        printf("Error: La expresion posee literales no definidas.\n");
     }
 }
 
@@ -490,7 +490,7 @@ void main()
         scanf("%i", &cantidadVariables);
         if (cantidadVariables <= 0)
         {
-            printf("Error: La cantidad de variables debe ser mayor que 0.");
+            printf("Error: La cantidad de variables debe ser mayor que 0.\n");
         }
     } while (cantidadVariables <= 0);
 
