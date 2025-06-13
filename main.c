@@ -472,8 +472,7 @@ void crearTabla(int cantidadVariables)
     printf("Ingrese una expresion: ");
     // Limpiamos, porque anteriormente utilizamos scanf para las variables.
     int c;
-    while ((c = getchar()) != '\n' && c != EOF)
-        ;
+    getchar();
     fgets(expresion, 64, stdin);
 
     validarExpresion(cantidadVariables, cantidadCeldas, tabla, variables, expresion);
